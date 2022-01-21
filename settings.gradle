@@ -1,0 +1,2 @@
+rootProject.name = "miniproj2admin"
+include ':app'

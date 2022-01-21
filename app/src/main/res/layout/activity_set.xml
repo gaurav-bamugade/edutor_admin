@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".setActivity">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:background="@color/colorPurple"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/addVideos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Add Videos"
+                    android:textColor="#FFF"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rounded_corners"
+
+                    >
+
+                </Button>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question Sets"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:columnWidth="120dp"
+            android:numColumns="auto_fit"
+            android:layout_gravity="center"
+            >
+
+        </GridView>
+
+    </LinearLayout>

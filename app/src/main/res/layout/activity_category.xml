@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/createCoursBar"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#845AF7"
+        >
+        <RelativeLayout
+            android:layout_marginStart="100dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/add_category"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                >
+            </ImageView>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/createCoursBar"
+        android:id="@+id/cate_rc"
+        tools:listitem="@layout/drv_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

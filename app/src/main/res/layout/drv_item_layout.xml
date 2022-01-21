@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/play"
+            >
+        </ImageView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/name_of_the_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginStart="5sp"
+                android:textColor="@color/black"
+                android:text="Playlist video name">
+            </TextView>
+            <ImageView
+                android:id="@+id/deletevideo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_deleted"
+                android:layout_toEndOf="@+id/name_of_the_video"
+                >
+            </ImageView>
+        </RelativeLayout>
+
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  >
+
+              </LinearLayout>
+            &lt;!&ndash;  <TextView
+                  android:id="@+id/uploader_name"
+                  android:layout_marginStart="5sp"
+                  android:layout_marginTop="3dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="11sp"
+                  android:textColor="#A5A2A2"
+                  android:textAlignment="textStart"
+                  android:text="Uploader Name">
+              </TextView>&ndash;&gt;
+
+          </LinearLayout>-->
+    </LinearLayout>
+    <!-- <ImageView
+         android:layout_alignParentEnd="true"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/newoptions"
+         android:layout_marginEnd="20dp"
+         android:layout_marginTop="5dp">
+     </ImageView>-->
+</RelativeLayout>

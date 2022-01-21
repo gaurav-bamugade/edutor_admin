@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AddVideoActivity">
+
+        <VideoView
+            android:id="@+id/stream_vid"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:backgroundTint="@color/black"
+            >
+        </VideoView>
+
+    <RelativeLayout
+        android:id="@+id/rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/designed_shape">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00a2ff"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxStrokeColor="#00a2ff"
+            app:hintTextAppearance="@android:style/TextAppearance.Medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_video_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Topic Name"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Choose Video"
+            android:clickable="true"
+            android:onClick="chooseVideo"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFF"
+            android:background="@drawable/rounded_corners"
+            android:layout_height="wrap_content"
+            >
+
+        </Button>
+
+        <Button
+            android:text="Upload Video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:id="@+id/upload_btn"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corners"
+            android:layout_gravity="center"
+            >
+        </Button>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            android:id="@+id/progress_amin"
+            >
+        </ProgressBar>
+    </LinearLayout>

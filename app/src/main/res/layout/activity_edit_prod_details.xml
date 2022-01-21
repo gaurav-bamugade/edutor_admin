@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".editProdDetailsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#845AF7"
+        >
+    </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/auct_img"
+                    android:background="@drawable/rounded_box"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="350dp"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:layout_margin="3dp"
+                            android:id="@+id/edit_prod_img"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:maxHeight="250dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/theme2">
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/imgbtnid"
+                    android:layout_below="@+id/auct_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/edit_btnchoose"
+                        android:background="@drawable/rounded_corners"
+                        android:layout_centerInParent="true"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Choose Image" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/abcded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgbtnid">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/designed_shape">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#00a2ff"
+                                app:boxCornerRadiusBottomStart="10dp"
+                                app:boxCornerRadiusTopEnd="10dp"
+                                app:boxStrokeColor="#00a2ff"
+                                app:hintTextAppearance="@android:style/TextAppearance.Medium">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edit_product_Name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Product Name"
+                                    android:inputType="text"
+                                    android:textSize="20sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rel_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/designed_shape">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#00a2ff"
+                                app:boxCornerRadiusBottomStart="10dp"
+                                app:boxCornerRadiusTopEnd="10dp"
+                                app:boxStrokeColor="#00a2ff"
+                                app:hintTextAppearance="@android:style/TextAppearance.Medium">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edit_product_description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Product Description"
+                                    android:inputType="text"
+                                    android:textSize="20sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rel_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/designed_shape">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#00a2ff"
+                                app:boxCornerRadiusBottomStart="10dp"
+                                app:boxCornerRadiusTopEnd="10dp"
+                                app:boxStrokeColor="#00a2ff"
+                                app:hintTextAppearance="@android:style/TextAppearance.Medium">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edit_product_price"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableEnd="@drawable/rupee"
+                                    android:hint="Price"
+                                    android:inputType="number"
+                                    android:textSize="20sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rel_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/designed_shape">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="10dp"
+                                    android:text="Stock :"
+                                    android:textColor="@color/black"
+                                    android:textSize="19sp"/>
+
+                                <ImageView
+                                    android:id="@+id/edit_plus"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="10dp"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_plus">
+
+                                </ImageView>
+
+                                <TextView
+                                    android:id="@+id/edit_stockCt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:padding="5dp"
+                                    android:text="1"
+                                    android:textColor="@color/black"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:id="@+id/edit_minus"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_minus"/>
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/rel_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/designed_shape">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+
+                                <Spinner
+                                    android:id="@+id/prod_cat_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginStart="20dp"
+
+                                    >
+
+                                </Spinner>
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="?attr/actionBarSize"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/edit_uploadProduct"
+                    android:layout_below="@+id/abcded"
+                    android:layout_width="match_parent"
+                    android:text="Update Details"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners">
+                </Button>
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>

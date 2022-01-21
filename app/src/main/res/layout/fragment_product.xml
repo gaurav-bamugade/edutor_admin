@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductFragment">
+
+
+    <EditText
+        android:id="@+id/search_prod"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/roundrect"
+        android:drawableEnd="@drawable/ic_search"
+        android:ems="10"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:hint="What are you looking for?"
+        android:inputType="textPersonName"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prod_recycler"
+        android:layout_below="@+id/search_prod"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

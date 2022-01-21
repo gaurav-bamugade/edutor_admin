@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:id="@+id/Home"
+        android:icon="@drawable/ic_home_24"
+        android:title="HOME"
+        >
+
+    </item>-->
+    <item android:id="@+id/Reedem"
+        android:icon="@drawable/openbox"
+        android:title="Reedem"
+        >
+
+    </item>
+    <item android:id="@+id/Dashboard"
+        android:icon="@drawable/dashboard"
+        android:title="DashBoard"
+        >
+
+    </item>
+
+
+</menu>
